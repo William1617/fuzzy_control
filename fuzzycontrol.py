@@ -128,15 +128,15 @@ class fuzzy_controler():
 
        
 
-
-y_start=10
-angle_Start=220
-car_controller=fuzzy_controler(y_start,angle_Start)
-car_controller.create_membership_function()
-car_controller.create_rules()
-y_end=1
-angle_end=10
-car_controller.plot_track(y_end,angle_end)
+if __name__=='__main__':
+        y_start=10
+        angle_Start=220
+        car_controller=fuzzy_controler(y_start,angle_Start)
+        car_controller.create_membership_function()
+        car_controller.create_rules()
+        y_end=1
+        angle_end=10
+        car_controller.plot_track(y_end,angle_end)
 
 
 
